@@ -1,0 +1,75 @@
+/*body {
+  padding-top: 54px; 
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px; /*56 */
+/*  }
+}*/
+
+/*header.masthead {
+  background: url('/img/Portada.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}*/
+/*
+header.masthead>.overlay {
+  padding: 5rem 0;
+  padding-top: 40px; 
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}*/
+
+
+/*
+@media (min-width: 992px) {
+  header.masthead>.overlay {
+    padding: 10rem 0;
+  }
+}*/
+
+.wrapper{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 400px 1400px 50px;
+  grid-template-areas:
+    "m m m m m m m m m m m m"
+    "h h h h h h h h h h h h"
+    "c c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+.header{
+  grid-area: h;
+  background: url('/img/portada.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  opacity: 0.5;
+}
+
+.menu{
+  grid-area: m;
+  position: fixed;
+  top: 0;
+  color: rgba(255, 0, 0, 0.5);
+}
+
+.navbar{
+  opacity: 0.5.
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-area: c;
+}
+
+.footer{
+  grid-area: f;
+}
